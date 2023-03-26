@@ -4,8 +4,8 @@ import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 import java.util.Date
 
 abstract class Veiculo (open var identificador : String) : Movimentavel {
-    var posicao : Posicao = Posicao(0,0)
-    var dataDeAquisicao : Date = Date()
+    var posicao = Posicao(0,0)
+    abstract var dataDeAquisicao : Date
     fun setDataAquisicao() {
         dataDeAquisicao = Date()
     }
