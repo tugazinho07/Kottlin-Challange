@@ -18,7 +18,7 @@ class Bicicleta(identificador:String) : Veiculo(identificador) {
     }
 
     override fun moverPara(x: Int, y: Int) {
-        posicao.alterarPosicao(x,y)
+        posicao.changePosition(x,y)
     }
 
 }
