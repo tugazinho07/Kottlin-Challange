@@ -10,8 +10,9 @@ class Motor(var cavalos: Int, var cilindrada: Int) : Ligavel {
     override fun ligar() {
         if(estado){
             throw  VeiculoLigadoException()
+        }else{
+            estado = true
         }
-        estado = true
     }
 
 

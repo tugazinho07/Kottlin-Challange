@@ -25,7 +25,6 @@ import java.text.SimpleDateFormat
         }
 
         if (motor.estaLigado()){
-            ligar()
             posicao.changePosition(x, y)
             desligar()
         }
