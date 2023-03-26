@@ -57,8 +57,12 @@ class Pessoa(var nome: String, var dataDeNascimento: Date) : Movimentavel {
     }
 
 
-    fun temCarta() : Boolean{
-        return this.carta != null
+    fun temCarta(): Boolean{
+        if(this::carta.isInitialized && true)
+        {
+            return true
+        }
+        return false
     }
 
     fun tirarCarta(){
