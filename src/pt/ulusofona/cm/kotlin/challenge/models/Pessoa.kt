@@ -68,7 +68,7 @@ class Pessoa(var nome: String, var dataDeNascimento: Date) : Movimentavel {
     }
 */
     fun temCarta(): Boolean{
-        if(this::carta.isInitialized && carta is Carta)
+        if(this::carta.isInitialized && true)
         {
             return true
         }
