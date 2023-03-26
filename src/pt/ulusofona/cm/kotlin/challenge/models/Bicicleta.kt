@@ -1,8 +1,9 @@
 package pt.ulusofona.cm.kotlin.challenge.models
 
 import java.text.SimpleDateFormat
+import java.util.*
 
-class Bicicleta(identificador:String) : Veiculo(identificador) {
+class Bicicleta(identificador:String, override var dataDeAquisicao: Date) : Veiculo(identificador) {
     override fun requerCarta(): Boolean {
         return false
     }
