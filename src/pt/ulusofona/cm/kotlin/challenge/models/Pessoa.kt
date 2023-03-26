@@ -40,7 +40,7 @@ class Pessoa(var nome: String, var dataDeNascimento: Date) : Movimentavel {
 
         posicao.changePosition(x,y)
     }
-/*
+
     fun moverVeiculoPara(identificador: String, x: Int, y: Int) {
         var veiculo : Veiculo = pesquisarVeiculo(identificador)
         if (veiculo.requerCarta()) {
@@ -55,7 +55,8 @@ class Pessoa(var nome: String, var dataDeNascimento: Date) : Movimentavel {
             moverPara(x,y)
         }
     }
-*/
+
+    /*
     fun moverVeiculoPara(identificador: String, x: Int, y: Int) {
         var veiculo : Veiculo = pesquisarVeiculo(identificador)
         if (veiculo.requerCarta() || temCarta()) {
@@ -65,9 +66,9 @@ class Pessoa(var nome: String, var dataDeNascimento: Date) : Movimentavel {
                 throw PessoaSemCartaException(nome)
             }
     }
-
+*/
     fun temCarta(): Boolean{
-        if(this::carta.isInitialized && true)
+        if(this::carta.isInitialized && carta is Carta)
         {
             return true
         }
