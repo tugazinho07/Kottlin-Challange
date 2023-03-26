@@ -6,12 +6,14 @@ import pt.ulusofona.cm.kotlin.challenge.exceptions.PessoaSemCartaException
 import pt.ulusofona.cm.kotlin.challenge.exceptions.VeiculoNaoEncontradoException
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 import java.text.SimpleDateFormat
-
 import java.util.*
 
 class Pessoa(var nome: String, var dataDeNascimento: Date) : Movimentavel {
     val veiculos1 = mutableListOf<Veiculo>()
-    val veiculos: MutableList<Veiculo> = mutableListOf()
+    val veiculos : MutableList<Veiculo> = mutableListOf()
+
+
+
     var posicao: Posicao = Posicao(0,0)
     lateinit var carta: Carta
 
